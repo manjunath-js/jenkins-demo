@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         AWS_REGION = "ap-south-1"
-        ECR_REPO = "jenkins-demo"
+        ECR_REPO = "my-app"
 
         ACCOUNT_ID = "245112717518"
 
