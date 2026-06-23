@@ -13,15 +13,6 @@ pipeline {
         "${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${ECR_REPO}:${IMAGE_TAG}"
     }
 
-    stages {
-
-        stage('Clone') {
-            steps {
-                git branch: 'main',
-                url: 'https://github.com/manjunath-js/jenkins-demo.git'
-            }
-        }
-
         stage('Build') {
             steps {
                 sh '''
